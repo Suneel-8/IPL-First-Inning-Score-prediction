@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="height=device-height,initial-scale=1.0">
+        <title >IPL First inning score prediction</title>
+        <link rel="stylesheet"
+              href={{url_for('static',filename='style.css')}}/>
+        <link  rel="stylesheet" href="../static/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Lobster&family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <h2 class="heading">First Ininnng Score Predictor For Indian Premier Leauge(IPL)</h2>
+            </div>
+            <div class="prediction-display">
+             <p> Final Predicted score range: {{ lower_limit }} to {{ upper_limit }}</p>
+            </div>
+            <div class="footer">
+                <a class="social_media"  target="_blank" href="https://github.com/sunilpanday/IPL-First-Inning-Score-prediction"><i class="fa fa-github" ></i></a>
+                <a class="social_media" target="_blank" href="https://www.linkedin.com/in/sunil-panday-b9b5811b1/"><i class="fa fa-linkedin" ></i></a>
+            </div>
+        </div>
+    </body>
+</html>

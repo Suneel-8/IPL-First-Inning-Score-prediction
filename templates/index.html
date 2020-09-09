@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="height=device-height,initial-scale=1.0">
+        <title >IPL First inning score prediction</title>
+        <link rel="stylesheet"
+              href={{url_for('static',filename='style.css')}}/>
+        <link  rel="stylesheet" href="../static/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Lobster&family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <h2 class="heading">First Ininnng Score Predictor For Indian Premier Leauge(IPL)</h2>
+            </div>
+            <div class="container">
+                <form action="{{ url_for('predict') }}" method='post' >
+                    <select  class="form-group" name="bating-team" >
+                        <option value="none" >--Select Batting Team--</option>
+                        <option value="Mumbai Indians" >Mumbai Indians</option>
+                        <option value="Kolkata Knight Riders" >Kolkata Knight Riders</option>
+                        <option value="Chennai Super Kings" >Chennai Super Kings</option>
+                        <option value="Sunrisers Hyderabad" >Sunrisers Hyderabad</option>
+                        <option value="Royal Challengers Bangalore" >Royal Challengers Bangalore</option>
+                        <option value="Delhi Capitals" >Delhi Capitatls</option>
+                        <option value="Kings XI Punjab" >Kings XI Punjab'</option>
+                        <option value="Rajasthan Royals" >Rajasthan Royals'</option>
+                    </select><br>
+
+                    <select class="form-group" name="bowling-team" >
+                        <option value="none" >--Select Bowling Team--</option>
+                        <option value="Mumbai Indians" >Mumbai Indians</option>
+                        <option value="Kolkata Knight Riders" >Kolkata Knight Riders</option>
+                        <option value="Chennai Super Kings" >Chennai Super Kings</option>
+                        <option value="Sunrisers Hyderabad" >Sunrisers Hyderabad</option>
+                        <option value="Royal Challengers Bangalore" >Royal Challengers Bangalore</option>
+                        <option value="Delhi Capitals" >Delhi Capitals</option>
+                        <option value="Kings XI Punjab" >Kings XI Punjab</option>
+                        <option value="Rajasthan Royals" >Rajasthan Royals</option>
+                    </select><br>
+
+                    <input class="form-group" type="text" name="over"
+                           placeholder="Current Over(greater than 5) eg:8"><br>
+                    <input class="form-group" type="text" name="runs"
+                           placeholder="Total Runs scored eg-70"><br>
+                    <input class="form-group" type="text" name="wickets"
+                           placeholder="Total Wicket lossed eg-2"><br>
+                    <input class="form-group" type="text" name="wickets_last_5"
+                           placeholder="Wicket lossed in previous 5 over eg-1">
+                    <br>
+                    <input class="button" type="submit" name="Predict" value="Predict"><br>
+
+                </form>
+            </div>
+            <div class="footer">
+                <a class="social_media"  target="_blank" href="https://github.com/sunilpanday"><i class="fa fa-github" ></i></a>
+                <a class="social_media" target="_blank" href="https://www.linkedin.com/in/sunil-panday-b9b5811b1/"><i class="fa fa-linkedin" ></i></a>
+            </div>
+        </div>
+    </body>
+</html>
