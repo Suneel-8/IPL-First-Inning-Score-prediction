@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,request
 import numpy as np
 import pickle
 app = Flask(__name__)
@@ -31,7 +31,7 @@ def predict():
         elif batting_team == 'Sunrisers Hyderabad':
             batting = [0, 0, 0, 0, 0, 0, 0]
 
-        bowling_team = request.form['bowling_team']
+        bowling_team = request.form['bowling-team']
         if bowling_team == 'Chennai Super Kings':
             bowling = [1, 0, 0, 0, 0, 0, 0]
         elif bowling_team == 'Delhi Capitals':
@@ -48,10 +48,10 @@ def predict():
             bowling = [0, 0, 0, 0, 0, 0, 1]
         elif bowling_team == 'Sunrisers Hyderabad':
             bowling = [0, 0, 0, 0, 0, 0, 0]
-        overs = float(request.form['overs'])
+        overs = float(request.form['over'])
         runs = int(request.form['runs'])
         wickets = int(request.form['wickets'])
-        wickets_last_5 = wickets_last_5(request.form['wickets_last_5'])
+        wickets_last_5 = int(request.form['wickets_last_5'])
 
         x = np.array(batting + bowling + [runs, wickets, overs, wickets_last_5])
         x = x.reshape(1, -1)

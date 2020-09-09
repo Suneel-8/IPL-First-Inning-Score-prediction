@@ -81,11 +81,13 @@ form {
 }
 
 .footer {
-    background-color:#000000
     position:absolute;
     height:30px;
     buttom:0;
     width:100%;
+    background-color:#000000
+
+
 }
 .social_media {
     color:inherit;
@@ -99,7 +101,6 @@ form {
     color:#a6a19a;
 
 }
-
 
 
 @media  screen and  (max-width: 660px) {
