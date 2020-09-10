@@ -45,25 +45,33 @@ form {
 }
 
 .button {
+    font-size:17px;
     margin-top:8px;
     margin-bottom:14px;
-    border-radius:2px;
+    border-radius:4px;
     box-shadow:  0px 0px 20px;
     width:35%;
 	padding: 10px 0px;
+    outline:none;
     background-color: #000000;
     color: white;
+    transition:ease-out 0.3s;
+    border: 2px solid #8B0000;
 }
 
 .button:hover{
-    color: #4d089a;
-    border: 2px solid #4d089a;
+    color:#fff;
+    cursor:pointer;
+    background:#8B0000;
+
 }
 
 .prediction-display {
     display:flex;
     font-family: 'Playfair Display', serif;
     font-size:21px;
+    margin-right:22px;
+    margin-left:22px;
 }
 
 
