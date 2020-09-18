@@ -1,3 +1,3 @@
 # IPL-First-Inning-Score-prediction
-If you want it view it. You can access it from the given link. <br>
+Web App Link. <br>
 https://ipl-scorepredictions.herokuapp.com/
