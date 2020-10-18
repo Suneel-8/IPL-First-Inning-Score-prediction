@@ -74,23 +74,3 @@ form {
     margin-left:22px;
 }
 
-
-.footer {
-    padding:15px;
-    background-color:#000000
-}
-
-
-.social_media {
-    color:inherit;
-    color:white;
-    padding-left:10px;
-    font-size:1.4em;
-    background-color:#000000
-}
-
-.social_media:hover {
-    color:#a6a19a;
-
-}
-
