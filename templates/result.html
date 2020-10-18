@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title >IPL First inning score prediction</title>
         <link rel="stylesheet" href={{url_for('static',filename='style.css')}}>
         <link rel="shortcut icon" href={{url_for('static',filename='favicon.ico')}} type="image/x-icon">
@@ -19,6 +20,8 @@
             <div class="container">
                 <p class="prediction-display"> Final Predicted score range: {{ lower_limit }} to {{ upper_limit }}</p>
             </div>
+
+
         </div>
     </body>
 </html>
